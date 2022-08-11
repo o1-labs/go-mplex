@@ -21,8 +21,9 @@ import (
 
 var log = logging.Logger("mplex")
 
+var MaxMessageSize = 1 << 20
+
 const (
-	MaxMessageSize = 1 << 20
 	BufferSize     = 4096
 	MaxBuffers     = 4
 
